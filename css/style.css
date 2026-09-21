@@ -1,19 +1,23 @@
-body { /*Seletor por elemento*/
-    
+header { /*Seletor por elemento*/
+    text-align: center;
 }
 
-#cabecalho { /*Seletor por ID*/
-
+body {
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.contato { /*Seletor por classe*/
+#informacao { /*Seletor por ID*/
+    font-size: large ;
+}
 
+.contatoUl { /*Seletor por classe*/
+    text-decoration: underline;
 }
 
 a[href] { /*Seletor por atributo*/
-
+    color: blue
 }
 
 a:hover { /* Seletor por pseudo-classe*/
-
+    color: red
 }

@@ -24,7 +24,7 @@
     
   <section class="contato">
     <h2>Contato</h2>
-    <ul>
+    <ul class="contatoUl">
       <li><img src="./icones/phone.svg" alt="Telefone" width="13"><strong> Telefone: </strong> (43) 99902-6277</li>
       <li><img src="./icones/mail.svg" alt="E-mail" width="13"><strong> Email: </strong> ryanribeiro@alunos.utfpr.edu.br</li>
       <li><img src="./icones/linkedin.svg" alt="LinkedIn" width="13"><strong> LinkedIn: </strong><a href="https://www.linkedin.com/in/ryanribeirodossantos/" target="_blank">linkedin.com/in/ryanribeirodossantos</a></li>
@@ -86,7 +86,7 @@
   </section> <!-- fim de educação -->
 
   <div class="EntrarEmContato">
-    <button type="button" onclick="modalContato.showModal()">Enviar informações de contato</button>
+    <button id="informacao" type="button" onclick="modalContato.showModal()">Enviar informações de contato</button>
       <dialog id="modalContato">
         <label>Nome Completo:</label><br>
         <input type="text" placeholder="Seu nome"><br>
