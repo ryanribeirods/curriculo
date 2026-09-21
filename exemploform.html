@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de atividade pratica</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form>
+        <fieldset>
+            <label>Nome completo: <input type="text" style="width: 300px;" required></label>
+            <br>
+            <br>
+            <label>Idade: <input type="number" min="18" max="120" required></label>
+            <br>
+            <br>
+            <label>Email: <input type="email" placeholder="insira um e-mail válido" required></label>
+            <br>
+            <br>
+            <label>Conteúdo de maior interesse: 
+                <select id="interesse" name="interesse">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js" selected>JavaScript</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label>Deixe sua opinião: </label>
+            <br>
+            <textarea id="opiniao" name="opiniao" rows="5" cols="30"></textarea>
+            <br>
+            <br>
+            <label>Senha: <input type="password"></label>
+            <br>
+            <br>
+            <label>Terminou? <input type="submit" value="Enviar"></label>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculo Ryan Ribeiro</title>
+  <link rel="stylesheet" href="./css/style.css"/>
+</head>
+
+<!-- Início do corpo -->
+
+<body>
+  <header class="cabecalho">
+    <div id="cabecalho">
+      <h1 id="cabecalho">Ryan Ribeiro dos Santos</h1>
+      <figure>
+          <img src="./imagens/foto.png" alt="Foto de Ryan Ribeiro dos Santos" height="200" width="200" style="border-radius: 50%;">
+          <figcaption>Foto de perfil</figcaption>
+      </figure>
+      <p>Estudante de Desenvolvimento Web | HTML, CSS e JavaScript</p>
+    </div>
+  </header> <!-- fim do cabeçalho -->
+    
+  <section class="contato">
+    <h2>Contato</h2>
+    <ul>
+      <li><img src="./icones/phone.svg" alt="Telefone" width="13"><strong> Telefone: </strong> (43) 99902-6277</li>
+      <li><img src="./icones/mail.svg" alt="E-mail" width="13"><strong> Email: </strong> ryanribeiro@alunos.utfpr.edu.br</li>
+      <li><img src="./icones/linkedin.svg" alt="LinkedIn" width="13"><strong> LinkedIn: </strong><a href="https://www.linkedin.com/in/ryanribeirodossantos/" target="_blank">linkedin.com/in/ryanribeirodossantos</a></li>
+      <li><img src="./icones/github.svg" alt="GitHub" width="13"><strong> GitHub: </strong><a href="https://github.com/ryanribeirods">github.com/ryanribeirods</a></li>
+    </ul>
+  </section> <!-- fim de contato -->
+
+  <section class="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Pacote Office</li>
+      <li>Informática Intermediária.</li>
+      <li>Inglês Intermediário.</li>
+    </ul>
+  </section> <!-- fim de habilidades -->
+
+  <section class="resumo">
+    <h2>Resumo</h2>
+    <p>Estudante de Desenvolvimento front-end, aprendendo HTML, CSS e JavaScript.</p>
+  </section> <!-- fim de resumo -->
+
+  <section class="ODS">
+    <h2>ODS que pretendo contribuir</h2>
+    <figure>
+      <img src="./imagens/ODS.svg" alt="Educação de qualidade" width="200" height="200">
+      <figcaption>Garantir o acesso à educação inclusiva, de qualidade e equitativa, e promover oportunidades de aprendizagem ao longo da vida para todos.</figcaption>
+    </figure>
+  </section> <!-- fim de ODS -->
+
+  <section class="experiencia">
+    <h2>Experiência Profissional</h2>
+    <h3>Estagiário de Departamento Pessoal | TotalCob Serviços Terceirizados</h3>
+    <p>06/2021 - 04/2022</p>
+    <ul>
+      <li>Participei de rotinas administrativas do departamento pessoal.</li>
+      <li>Trabalhei criando planilhas e fazendo a manutenção cadastral dos funcionários.</li>
+    </ul>
+
+    <h3>Aprendiz de Recursos Humanos | Cassarotti Foods</h3>
+    <p>04/2025 - 02/2026</p>
+    <ul>
+      <li>Participei de rotinas administrativas de recursos humanos.</li>
+      <li>Trabalhei organizando documentos, criando planilhas e fazendo manutenção dos documentos dos funcionários.</li>
+    </ul>
+
+    <h3>Auxiliar Administrativo | JH Supermercado da Construção</h3>
+    <p>03/2026 - Atualmente</p>
+    <ul>
+      <li>Participo de rotinas do setor de compras.</li>
+      <li>Trabalho analisando estoque, fazendo orçamentos e comprando materiais do setor básico e cobertura.</li>
+      <li>Acompanho o cronograma de Marketing, cobrando pendências.</li>
+    </ul>
+  </section> <!-- fim de experiência -->
+  
+  <section class="educacao">
+    <h2>Educação</h2>
+    <h3>Tecnologia em Análise e Desenvolvimento de Sistemas.</h3>
+    <p>Universidade Tecnológica Federal do Paraná - Campus Cornélio Procópio | 2026 - cursando</p>
+  </section> <!-- fim de educação -->
+
+  <div class="EntrarEmContato">
+    <button type="button" onclick="modalContato.showModal()">Enviar informações de contato</button>
+      <dialog id="modalContato">
+        <label>Nome Completo:</label><br>
+        <input type="text" placeholder="Seu nome"><br>
+        <br>
+        <label>Link para o Instagram:</label><br>
+        <input type="email" placeholder="intagram.com/seu_perfil"><br>
+        <br>
+        <label>Número do Whatsapp</label><br>
+        <input type="tel" placeholder="012 1234-5678"><br>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="modalContato.close()">Fechar</button>  
+    </dialog>
+  </div><!-- fim de Entrar Em Contato -->
+</body>
+</html>

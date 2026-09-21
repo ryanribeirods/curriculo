@@ -1,0 +1,19 @@
+body { /*Seletor por elemento*/
+    
+}
+
+#cabecalho { /*Seletor por ID*/
+
+}
+
+.contato { /*Seletor por classe*/
+
+}
+
+a[href] { /*Seletor por atributo*/
+
+}
+
+a:hover { /* Seletor por pseudo-classe*/
+
+}
