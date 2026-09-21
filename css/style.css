@@ -7,7 +7,7 @@ body {
 }
 
 #informacao { /*Seletor por ID*/
-    font-size: large ;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .contatoUl { /*Seletor por classe*/
