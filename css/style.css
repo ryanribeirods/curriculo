@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-header { /*Seletor por elemento*/
+
+/*Seletor por elemento*/
+header {
     text-align: center;
 }
 
 body{
     background-color: azure;
+    color: rgb(18, 18, 18);
+    font-family: 'Ronoto';
 }
 
 h1{
@@ -16,22 +20,22 @@ h2{
     font-style: italic;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-#informacao { /*Seletor por ID*/
+/*Seletor por ID*/
+#informacao {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.contatoUl { /*Seletor por classe*/
+/*Seletor por classe*/
+.contatoUl { 
     text-decoration: underline;
 }
 
-a[href] { /*Seletor por atributo*/
+/*Seletor por atributo*/
+a[href] { 
     color: blue;
 }
 
-a:hover { /* Seletor por pseudo-classe*/
+/* Seletor por pseudo-classe*/
+a:hover { 
     color: red;
 }
