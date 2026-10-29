@@ -1,41 +1,259 @@
+/* Importação da fonte */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-/*Seletor por elemento*/
-header {
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: azure;
+    color: rgb(18, 18, 18);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Cabeçalho */
+.cabecalho {
+    text-align: center;
+    background-color: #d9eeee;
+    padding: 25px;
+    border-bottom: 2px solid #b5d5d5;
+}
+
+.cabecalho h1 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cabecalho p {
+    margin-top: 5px;
+}
+
+
+/* Organização das colunas */
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+
+/* Barra lateral */
+.barra-lateral {
+    background-color: #e4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* Foto de perfil */
+.perfil {
     text-align: center;
 }
 
-body{
-    background-color: azure;
-    color: rgb(18, 18, 18);
-    font-family: 'Ronoto';
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-h1{
-    font-weight: bold;
+
+/* Contato */
+.contato {
+    margin-top: 20px;
 }
 
-h2{
+.contatoUl {
+    list-style: none;
+    padding: 0;
+}
+
+.contatoUl li {
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.contatoUl img {
+    vertical-align: middle;
+}
+
+.contatoUl a {
+    overflow-wrap: anywhere;
+}
+
+
+/* Habilidades */
+.habilidades {
+    margin-top: 25px;
+}
+
+
+/* Objetivos de Desenvolvimento Sustentável */
+.ods {
+    margin-top: 25px;
+}
+
+.imagem-ods {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.ods figcaption {
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+/* Conteúdo principal */
+.conteudo-principal {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+/* Títulos das seções */
+h1 {
+    color: #163c4a;
+}
+
+h2 {
+    color: #24566b;
+    font-style: italic;
+    border-bottom: 1px solid #b5d5d5;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #333333;
+}
+
+
+/* Resumo */
+.resumo {
+    margin-bottom: 30px;
+}
+
+
+/* Experiência profissional */
+.experiencia {
+    margin-bottom: 30px;
+}
+
+.experiencia-item {
+    margin-bottom: 25px;
+}
+
+.periodo {
+    font-size: 14px;
+    color: #555555;
     font-style: italic;
 }
 
-/*Seletor por ID*/
-#informacao {
-    font-family: 'Courier New', Courier, monospace;
+
+/* Educação */
+.educacao {
+    margin-bottom: 20px;
 }
 
-/*Seletor por classe*/
-.contatoUl { 
+
+/* Links */
+a[href] {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
     text-decoration: underline;
 }
 
-/*Seletor por atributo*/
-a[href] { 
-    color: blue;
+
+/* Botão de contato */
+.rodape {
+    text-align: center;
+    padding: 20px;
 }
 
-/* Seletor por pseudo-classe*/
-a:hover { 
-    color: red;
+#informacao {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/* Janela de contato */
+dialog {
+    border: 1px solid #b5d5d5;
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 90%;
+}
+
+dialog input {
+    max-width: 100%;
+    padding: 8px;
+}
+
+dialog button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+/* Adaptação para telas menores */
+@media (max-width: 768px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 15px auto;
+        padding: 0 12px;
+    }
+
+    .barra-lateral {
+        order: 1;
+    }
+
+    .conteudo-principal {
+        order: 2;
+        padding: 15px;
+    }
+
+    .cabecalho {
+        padding: 15px;
+    }
+
+    .cabecalho h1 {
+        font-size: 25px;
+    }
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contatoUl li {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
 }
